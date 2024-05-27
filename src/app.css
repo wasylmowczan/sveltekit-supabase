@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@supports (-webkit-touch-callout: none) {
+	.h-screen {
+		height: -webkit-fill-available;
+	}
+}
+
+/* 
+Uncomment this to make all lucide icons the same size as the font size of the element they are in
+Can change icons size through text-* tailwindcss classes
+The 'size' attribute of lucide icons will be ignored if this is uncommented
+
+.lucide-icon {
+	width: 1em;
+	height: 1em;
+}
+*/
+
+/* 
+
+Uncomment this to make menu items active color match the theme's primary color
+Otherwise, defaults to 'neutral' and 'neutral-content' colors of DaisyUI theme
+
+.menu li > :not(ul):not(.menu-title):not(details):active,
+.menu li > :not(ul):not(.menu-title):not(details).active,
+.menu li > details > summary:active {
+	@apply bg-primary/5 text-primary;
+}
+*/
