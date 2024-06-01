@@ -28,9 +28,9 @@
 	$themeStore = $page.data.theme;
 
 	const defaultMetaTags = {
-		title: 'Launch Leopard',
-		description: 'A SvelteKit starter template with Supabase',
-		keywords: 'svelte, sveltekit, supabase, starter, template, typescript',
+		title: 'YaDomopoga - Місце волонтерської допомоги.',
+		description: 'Для осіб які шукають допомогу та волонтерів, які готові надати її. Зареєструйтесь та знайдіть волонтера або допоможіть іншим.',
+		keywords: 'банки, моно, волонтери, допомога',
 		ogimage: `${$page.url.origin}/images/ogimage.png`
 	};
 </script>

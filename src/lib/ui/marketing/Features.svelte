@@ -1,44 +1,43 @@
 <script lang="ts">
-	import { Check } from 'lucide-svelte';
+	import { Building, UserCheck, UserCheck2, WalletCards } from 'lucide-svelte';
 
 	const features = [
 		{
-			title: 'Full Stack',
+			title: 'Банки',
 			description:
-				'Launch Leopard is a full stack SvelteKit boilerplate. It includes a backend API built with Supabase or Authjs + Drizzle ORM.',
-			icon: Check
+				'Слідкуйте за баночками, поширюйте баночки друзям, підписуйтесь на баночки!',
+			icon: WalletCards
 		},
 		{
-			title: 'Payments',
+			title: 'Попроси про допомогу',
 			description:
-				'Launch Leopard includes a payments API built with Stripe. You can easily add subscriptions and one-time payments to your app.',
-			icon: Check
+				'Завдяки нашому порталу ви можете попросити про допомогу у вирішенні вашої проблеми. Житло, їжа, робота, медична допомога - все чого потребуєш!',
+			icon: UserCheck
 		},
 		{
-			title: 'Styling',
+			title: 'Пропоную допомогу',
 			description:
 				'Launch Leopard includes Tailwind CSS and DaisyUI. You can easily customize the theme to match your brand.',
-			icon: Check
+			icon: UserCheck2
 		},
 		{
-			title: 'And more...',
+			title: 'Список перевірених організацій',
 			description:
-				'Launch Leopard includes a bunch of other features like AI APIs, SEO optimizations, email, and more.',
-			icon: Check
+				'Для тих, хто хоче бути корисним, ми зібрали список організацій. Будьте корисними!',
+			icon: Building
 		}
 	];
 </script>
 
-<section id="features" class="py-32">
+<section id="features">
 	<div class="container">
-		<p class="text-center text-sm font-medium text-primary">Features</p>
-		<h2 class="mt-2 text-center text-4xl font-semibold">What to expect</h2>
+		<h2 class="mt-2 text-center text-4xl font-semibold">Як працює портал 🤔</h2>
 		<p class="mt-4 text-center text-xl font-medium text-base-content/80">
-			List your most important feautures here. Talk about the benefits of the feature for the user.
+			 
 		</p>
-		<div class="mt-20 grid gap-10 md:grid-cols-2">
+		<div class="mt-20 grid gap-10 md:grid-cols-2 py-10">
 			{#each features as feature}
-				<div class="flex gap-6">
+				<div class="flex gap-6 pb-4">
 					<div>
 						<div class="flex h-10 w-10 justify-center rounded-lg bg-primary">
 							<span class="place-self-center text-2xl text-primary-content"

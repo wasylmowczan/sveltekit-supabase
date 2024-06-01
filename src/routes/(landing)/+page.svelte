@@ -9,7 +9,6 @@
 
 <Hero />
 <Features />
-<Pricing />
 <NewsletterSignup/>
 <Faq />
-<Testimonials/>
+

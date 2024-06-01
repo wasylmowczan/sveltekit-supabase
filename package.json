@@ -1,6 +1,6 @@
 {
-  "name": "launch-leopard",
-  "version": "0.0.2",
+  "name": "ya-dopomoga",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "vite dev",

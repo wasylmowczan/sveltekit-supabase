@@ -1,16 +1,16 @@
 <script lang="ts">
 	const faqs = [
 		{
-			question: 'What is Launch Leopard?',
-			answer: 'Launch Leopard is a SvelteKit boilerplate to get you up and running quickly.'
+			question: 'Як долучитися?',
+			answer: 'Поширюйте інформацію про збори, допомагайте потребуючим, ставайте волонтером в одній з організацій ...'
 		},
 		{
-			question: 'How does Launch Leopard work?',
-			answer: 'Just clone the repo or click on \'use template\' on Github and you\'re good to go!'
+			question: 'Мені потрібна допомога, як мені про це сказати?',
+			answer: 'Додайте своє оголошення з проханням про допомогу і небайдужі люди знайдуть вас.'
 		},
 		{
-			question: 'Can I use Launch Leopard for personal and professional purposes?',
-			answer: 'Absolutely!'
+			question: 'Я хочу допомогти, але не знаю як...',
+			answer: 'Ви можете допомогти фінансово своїм донатом, волонтерською роботою або просто поширюючи інформацію про потребуючих.'
 		}
 	];
 </script>
@@ -19,10 +19,9 @@
 	<div class="container">
 		<div class="flex flex-wrap gap-10 md:flex-nowrap">
 			<div class="md:basis-1/3">
-				<h2 class="text-2xl font-bold">Frequently Asked Questions</h2>
+				<h2 class="text-2xl font-bold">Хто ми?</h2>
 				<p class="mt-2 text-base-content">
-					Here are some of our FAQs. If you have any other questions you'd like answered please feel
-					free to email us.
+					Проект повстав на волонтерських засадах. У нас не маємо жодних комерційних цілей. Ми просто хочемо допомогти людям.
 				</p>
 			</div>
 			<div class="w-full space-y-2 md:basis-2/3">

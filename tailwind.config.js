@@ -4,10 +4,13 @@ export default {
 	theme: {
 		extend: {
 			container: {
-				padding: "1rem",
+				padding: '1rem',
 				center: true
 			}
-		}
+		},
 	},
-	plugins: [require('daisyui'), require('@tailwindcss/typography')]
+	plugins: [require('daisyui'), require('@tailwindcss/typography')],
+daisyui: {
+		// themes: ['cmyk']
+	},	
 };

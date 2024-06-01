@@ -31,10 +31,10 @@
 </script>
 
 <div class="bg-base-200 py-20 text-center">
-	<h2 class="text-2xl font-bold">Sign up for our newsletter</h2>
+	<h2 class="text-2xl font-bold">Підпишіться на нашу розсилку 📮</h2>
 	<form
 		on:submit|preventDefault={newsletterSignup}
-		action="https://app.loops.so/api/newsletter-form/[REPLACE_WITH_YOUR_FORM_ID]"
+		action="https://app.loops.so/api/newsletter-form/clwoliaas00is4hd587uqdr6m"
 		method="post"
 		class="mt-4 flex items-center justify-center gap-2">
 		<input
@@ -47,7 +47,7 @@
 		{#if loading}
 			<button disabled class="btn btn-primary loading loading-spinner"> </button>
 		{:else}
-			<button type="submit" class="btn btn-primary">Sign up</button>
+			<button type="submit" class="btn btn-primary">Підписатися</button>
 		{/if}
 	</form>
 	{#if message}

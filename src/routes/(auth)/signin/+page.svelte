@@ -23,7 +23,7 @@
 			loading = false;
 			return;
 		}
-		message = 'Check your email for the magic link';
+		message = 'Перевірте свою електронну пошту, щоб отримати чарівне посилання';
 		loading = false;
 	};
 	const signInWithGoogle = async () => {
@@ -42,13 +42,13 @@
 
 <section class="container">
 	<div class="mx-auto max-w-xl px-4 py-20">
-		<h1 class="text-2xl font-semibold">Sign in</h1>
+		<h1 class="text-2xl font-semibold">Вхід</h1>
 		{#if loading}
 			<button type="button" class="btn btn-disabled btn-block mt-2"
-				><span class="loading loading-spinner"></span> Loading...</button>
+				><span class="loading loading-spinner"></span> Завантаження...</button>
 		{:else}
 			<button type="button" on:click={() => signInWithGoogle()} class="btn btn-block mt-2"
-				>Sign in with Google
+				>Увійдіть за допомогою Google
 				<img
 					src="https://supabase.com/dashboard/img/icons/google-icon.svg"
 					alt="Google"
@@ -56,24 +56,24 @@
 					height="16" />
 			</button>
 		{/if}
-		<div class="divider">OR</div>
+		<div class="divider">або</div>
 
 		<form on:submit|preventDefault={signInWithEmail}>
 			<div class="form-control">
-				<label for="email">Email address</label>
+				<label for="email">Адреса електронної пошти</label>
 				<input
 					type="email"
 					id="email"
 					bind:value={email}
-					placeholder="Your email address"
+					placeholder="mail@example.com"
 					required
 					class="input input-bordered" />
 			</div>
 			{#if loading}
 				<button type="submit" class="btn btn-disabled btn-block mt-2"
-					><span class="loading loading-spinner"></span> Sending Magic Link</button>
+					><span class="loading loading-spinner"></span> Надсилання чарівного посилання</button>
 			{:else}
-				<button type="submit" class="btn btn-primary btn-block mt-2">Send Magic Link</button>
+				<button type="submit" class="btn btn-primary btn-block mt-2">Надіслати чарівне посилання</button>
 			{/if}
 
 			{#if message}

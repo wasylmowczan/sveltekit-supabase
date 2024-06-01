@@ -18,14 +18,11 @@
 			<div slot="content">
 				<ul class="menu">
 					<li>
-						<a href="/account"> Account </a>
-					</li>
-					<li>
-						<a href="/account/billing"> Billing </a>
+						<a href="/account"> Акаунт 👩‍💻</a>
 					</li>
 					<li>
 						<form action="/account?/signOut" method="post" class="block p-0">
-							<button type="submit" class="w-full px-4 py-2 text-left"> Sign out </button>
+							<button type="submit" class="w-full px-4 py-2 text-left"> Вийти 🫡 </button>
 						</form>
 					</li>
 				</ul>

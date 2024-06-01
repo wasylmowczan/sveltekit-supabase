@@ -6,7 +6,7 @@
 </script>
 
 <section>
-	<h1 class="text-xl font-semibold">Account</h1>
+	<h1 class="text-xl font-semibold">Акаунт 👨‍💻</h1>
 	<div class="mt-4">
 		<h2 class="text-lg font-medium">
 			Email <span class="text-xs">({$page.data.session?.user.email})</span>
@@ -24,11 +24,11 @@
 				placeholder="Last name"
 				class="input input-bordered"
 				value={data.profile.data.last_name ?? ''} />
-			<button type="submit" class="btn btn-primary">Update</button>
+			<button type="submit" class="btn btn-primary">Оновити</button>
 		</form>
 		{#if form?.success}
 			<p class="alert alert-success mt-2 w-fit text-success-content">
-				Profile updated successfully.
+				Профіль успішно оновлено.
 			</p>
 		{/if}
 	</div>
