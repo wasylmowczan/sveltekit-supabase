@@ -4,8 +4,7 @@
 	const features = [
 		{
 			title: 'Банки',
-			description:
-				'Слідкуйте за баночками, поширюйте баночки друзям, підписуйтесь на баночки!',
+			description: 'Слідкуйте за баночками, поширюйте баночки друзям, підписуйтесь на баночки!',
 			icon: WalletCards
 		},
 		{
@@ -32,10 +31,8 @@
 <section id="features">
 	<div class="container">
 		<h2 class="mt-2 text-center text-4xl font-semibold">Як працює портал 🤔</h2>
-		<p class="mt-4 text-center text-xl font-medium text-base-content/80">
-			 
-		</p>
-		<div class="mt-20 grid gap-10 md:grid-cols-2 py-10">
+		<p class="mt-4 text-center text-xl font-medium text-base-content/80"></p>
+		<div class="mt-20 grid gap-10 py-10 md:grid-cols-2">
 			{#each features as feature}
 				<div class="flex gap-6 pb-4">
 					<div>

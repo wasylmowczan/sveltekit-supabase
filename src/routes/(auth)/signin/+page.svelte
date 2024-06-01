@@ -73,7 +73,8 @@
 				<button type="submit" class="btn btn-disabled btn-block mt-2"
 					><span class="loading loading-spinner"></span> Надсилання чарівного посилання</button>
 			{:else}
-				<button type="submit" class="btn btn-primary btn-block mt-2">Надіслати чарівне посилання</button>
+				<button type="submit" class="btn btn-primary btn-block mt-2"
+					>Надіслати чарівне посилання</button>
 			{/if}
 
 			{#if message}

@@ -1,4 +1,3 @@
-
 import type { RequestHandler } from './$types';
 
 export const GET = (async ({ request, locals }) => {
@@ -8,11 +7,7 @@ export const GET = (async ({ request, locals }) => {
 	}
 
 	// With Supabase SDK
-	const user = await locals.supabase
-		.from('users')
-		.select('*')
-		.eq('id', session.user?.id)
-		.single();
+	const user = await locals.supabase.from('users').select('*').eq('id', session.user?.id).single();
 
 	return new Response(JSON.stringify(user));
 }) satisfies RequestHandler;

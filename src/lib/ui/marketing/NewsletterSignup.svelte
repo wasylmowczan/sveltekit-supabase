@@ -7,7 +7,7 @@
 		const form = event.target as HTMLFormElement;
 		const formData = new FormData(form);
 
-        // Loops.so API requires form data to be URL encoded, not FormData
+		// Loops.so API requires form data to be URL encoded, not FormData
 		const formBody = new URLSearchParams();
 		for (const [key, value] of formData) {
 			formBody.append(key, value.toString());

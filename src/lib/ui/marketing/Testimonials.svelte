@@ -35,7 +35,7 @@
 					</div>
 					<div class="mt-8 flex gap-4">
 						<div class="flex-shrink-0">
-							<img src="{testimonial.image}" alt="" class="h-10 w-10 rounded-full" />
+							<img src={testimonial.image} alt="" class="h-10 w-10 rounded-full" />
 						</div>
 						<div>
 							<p class="text-base-content/80">{testimonial.name}</p>

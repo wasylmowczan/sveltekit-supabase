@@ -8,7 +8,7 @@ const baseUrl = process.env.ORIGIN || 'http://localhost'; // fallback to localho
 
 // Add your paths to directories here, relative to `src/routes`
 // Don't include subdirectories of the routes, only the top level ones
-// Routes and subroutes with square brackets (e.g. [slug]) are skipped, 
+// Routes and subroutes with square brackets (e.g. [slug]) are skipped,
 // you'll have to implement your own logic for those
 const routePaths = ['(landing)', '(auth)'];
 
@@ -50,10 +50,10 @@ async function generateSitemap(dirPath: string, depth: number = 0): Promise<stri
 
 		for (const item of items) {
 			if (item.isDirectory()) {
-                // Skip directories with square brackets and their children
-                if (item.name.includes('[') || item.name.includes(']')) {
-                    continue;
-                }
+				// Skip directories with square brackets and their children
+				if (item.name.includes('[') || item.name.includes(']')) {
+					continue;
+				}
 				const subDirPath = path.join(dirPath, item.name);
 				entries.push(...(await generateSitemap(subDirPath, depth + 1)));
 			} else if (item.isFile() && item.name === '+page.svelte') {
@@ -69,16 +69,17 @@ async function generateSitemap(dirPath: string, depth: number = 0): Promise<stri
 }
 
 async function generateCmsSitemap(): Promise<string[]> {
-    // Generate the sitemap urls for your CMS routes here
-    // Then add ${(await generateCmsSitemap()).join('')} to the sitemap template below
-    // Underneath the ${sitemapEntries.join('')} line
-    return [`
+	// Generate the sitemap urls for your CMS routes here
+	// Then add ${(await generateCmsSitemap()).join('')} to the sitemap template below
+	// Underneath the ${sitemapEntries.join('')} line
+	return [
+		`
 <url>
     <loc>exampleurl.com/blog/some-post</loc>
     <lastmod>some-date</lastmod>
     <priority>0.8</priority>
 </url>`
-];
+	];
 }
 
 async function writeSitemap() {

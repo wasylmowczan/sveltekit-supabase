@@ -13,8 +13,6 @@
 		// Mount Checkout
 		checkout.mount('#checkout');
 	});
-
-
 </script>
 
 <svelte:head>

@@ -68,7 +68,7 @@
 					<ul class="mt-4 space-y-1 font-medium text-base-content/90">
 						{#each tier.features as feature}
 							<li class="flex items-center gap-2">
-								<span class="text-success"><Check size="1em"/></span>{feature}
+								<span class="text-success"><Check size="1em" /></span>{feature}
 							</li>
 						{/each}
 					</ul>

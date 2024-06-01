@@ -4,7 +4,7 @@
 </script>
 
 <Navbar />
-<div class="flex-grow mt-[4.25rem]">
-	<slot/>
+<div class="mt-[4.25rem] flex-grow">
+	<slot />
 </div>
 <Footer />

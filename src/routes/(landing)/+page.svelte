@@ -9,6 +9,5 @@
 
 <Hero />
 <Features />
-<NewsletterSignup/>
+<NewsletterSignup />
 <Faq />
-

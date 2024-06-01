@@ -36,7 +36,7 @@ export const actions = {
 			.from('profiles')
 			.update({
 				first_name: firstName,
-				last_name: lastName,
+				last_name: lastName
 			})
 			.eq('id', session?.user?.id)
 			.single();

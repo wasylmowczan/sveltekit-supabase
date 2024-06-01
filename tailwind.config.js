@@ -7,10 +7,10 @@ export default {
 				padding: '1rem',
 				center: true
 			}
-		},
+		}
 	},
 	plugins: [require('daisyui'), require('@tailwindcss/typography')],
-daisyui: {
+	daisyui: {
 		// themes: ['cmyk']
-	},	
+	}
 };

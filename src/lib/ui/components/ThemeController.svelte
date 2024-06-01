@@ -23,7 +23,7 @@
 </script>
 
 <Dropdown>
-	<div slot="button" class="flex items-center gap-1">Theme <ChevronDown size="1em"/></div>
+	<div slot="button" class="flex items-center gap-1">Theme <ChevronDown size="1em" /></div>
 	<div slot="content">
 		<ul class="menu px-1">
 			<!-- Add your themes here, value attribute must correspond to theme name -->

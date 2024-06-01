@@ -8,8 +8,8 @@ export const load = async ({ locals }) => {
 		.select('stripe_customer_id')
 		.eq('id', session?.user?.id)
 		.single();
-    const customerId : string | undefined = profile.data?.stripe_customer_id;
-    const customerEmail : string | undefined = session?.user?.email;
+	const customerId: string | undefined = profile.data?.stripe_customer_id;
+	const customerEmail: string | undefined = session?.user?.email;
 	const checkoutSesion = await stripe.checkout.sessions.create({
 		ui_mode: 'embedded',
 		line_items: [
@@ -22,8 +22,8 @@ export const load = async ({ locals }) => {
 		mode: 'subscription',
 		return_url: `${ORIGIN}/checkout/return?session_id={CHECKOUT_SESSION_ID}`,
 		automatic_tax: { enabled: true },
-        ...(customerId ? { customer: customerId } : {}),
-        ...(customerEmail && !customerId ? { customer_email: customerEmail } : {})
+		...(customerId ? { customer: customerId } : {}),
+		...(customerEmail && !customerId ? { customer_email: customerEmail } : {})
 	});
 
 	return { clientSecret: checkoutSesion.client_secret };

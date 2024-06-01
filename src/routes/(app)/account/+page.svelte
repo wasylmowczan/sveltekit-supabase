@@ -27,9 +27,7 @@
 			<button type="submit" class="btn btn-primary">Оновити</button>
 		</form>
 		{#if form?.success}
-			<p class="alert alert-success mt-2 w-fit text-success-content">
-				Профіль успішно оновлено.
-			</p>
+			<p class="alert alert-success mt-2 w-fit text-success-content">Профіль успішно оновлено.</p>
 		{/if}
 	</div>
 </section>

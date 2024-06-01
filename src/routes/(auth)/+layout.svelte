@@ -1,3 +1,3 @@
 <main class="flex-grow">
-<slot/>
+	<slot />
 </main>

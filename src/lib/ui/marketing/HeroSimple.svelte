@@ -1,4 +1,4 @@
-<section id="hero" class="hero py-32 bg-base-200">
+<section id="hero" class="hero bg-base-200 py-32">
 	<div class="hero-content text-center">
 		<div class="max-w-md">
 			<h1 class="text-5xl font-bold">Hello there</h1>

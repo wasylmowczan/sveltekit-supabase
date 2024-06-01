@@ -46,7 +46,7 @@ const supabase: Handle = async ({ event, resolve }) => {
 const authorization = (async ({ event, resolve }) => {
 	const { session, user } = await event.locals.safeGetSession();
 	// Line below is commented out because of an issue: https://github.com/supabase/auth-js/issues/873
-	// event.locals.session = session; 
+	// event.locals.session = session;
 	event.locals.user = user;
 	if (event.route.id?.startsWith('/(app)') && !session) {
 		redirect(303, '/signin');

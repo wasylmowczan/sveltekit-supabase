@@ -7,7 +7,7 @@
 
 <div class="navbar fixed top-0 z-50 w-full border-b border-base-300 bg-base-200">
 	<div class="flex w-full items-center justify-between">
-		<a href="/dashboard" class="btn btn-ghost text-xl normal-case"><Logo/></a>
+		<a href="/dashboard" class="btn btn-ghost text-xl normal-case"><Logo /></a>
 		<Dropdown class="dropdown-bottom">
 			<div slot="button" class="flex items-center gap-1 truncate text-xs normal-case">
 				<span class="w-40 truncate">

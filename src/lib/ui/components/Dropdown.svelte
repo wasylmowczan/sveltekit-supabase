@@ -13,7 +13,7 @@
 		}}>
 		<slot name="button" />
 	</summary>
-	<div class="menu dropdown-content rounded-box w-52 bg-base-100 p-0 shadow">
+	<div class="menu dropdown-content w-52 rounded-box bg-base-100 p-0 shadow">
 		<slot name="content" />
 	</div>
 </details>
