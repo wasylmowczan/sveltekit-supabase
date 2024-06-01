@@ -4,15 +4,12 @@
 <p align="center">
 For people who are looking for help and volunteers who are ready to provide it. Register and find a volunteer or help others.</p>
 </p>
-
 ## Technologies Used
 
 The app utilizes the following technologies:
 
-- SvelteKit: A framework for building web applications with Svelte, a modern JavaScript framework for building user interfaces.
-  ![SvelteKit Logo]("static/svelte.png")
-- Supabase: An open-source Firebase alternative that provides a backend-as-a-service platform for building web and mobile applications.
-  ![Supabase Logo]("static/supabase.png")
+- **SvelteKit**: A framework for building web applications with Svelte.
+- **Supabase**: An open-source Firebase alternative that provides a backend-as-a-service platform for building web and mobile applications.
 
 ## Contributing
 
