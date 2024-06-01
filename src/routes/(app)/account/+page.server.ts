@@ -1,5 +1,3 @@
-import { ORIGIN } from '$env/static/private';
-import stripe from '$lib/server/stripe';
 import { redirect, fail } from '@sveltejs/kit';
 import type { Actions } from './$types';
 
@@ -21,11 +19,7 @@ export const actions = {
 			.select('stripe_customer_id')
 			.eq('id', session?.user?.id)
 			.single();
-		const billingSession = await stripe.billingPortal.sessions.create({
-			customer: profile.data?.stripe_customer_id,
-			return_url: `${ORIGIN}/account`
-		});
-		redirect(303, billingSession.url ?? '/account');
+		redirect(303, '/account');
 	},
 	update: async ({ locals, request }) => {
 		const session = await locals.safeGetSession();
